@@ -1,0 +1,75 @@
+.footer {
+  padding: 80px 200px;
+  background-color: #111111;
+}
+
+.footerTop {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 62px;
+}
+
+.footerTopText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin-left: 404px;
+
+  color: #fff;
+}
+.footerTopBtn {
+  border-radius: 200px;
+  padding: 12px 24px;
+  margin-left: 48px;
+  background-color: #1b5b31;
+  color: #fff;
+  border: none;
+}
+
+.footerMiddle {
+  margin-top: 62px;
+  display: flex;
+}
+.footerSocial {
+  display: flex;
+}
+
+.footerSocialItem > a,
+.phoneEmail > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerSocialItem > a:hover,
+.phoneEmail > a:hover {
+  color: #1b5b31;
+}
+
+.phoneEmail {
+  margin-left: 348px;
+  display: flex;
+}
+
+.footerPhone {
+  margin-right: 48px;
+}
+
+.footerSocialItem:not(:last-child) {
+  margin-right: 48px;
+}
+
+.footerBottom {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+.footerCopy {
+  color: #fff;
+  margin-bottom: 0;
+}
+.logoPreText {
+  color: #fff;
+  margin-left: 643px;
+  margin-right: 16px;
+  margin-bottom: 0;
+}

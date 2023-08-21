@@ -1,0 +1,14 @@
+@mixin font($fs, $fw, $lh, $ls) {
+    font-size: $fs + px;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls + em;
+}
+
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            @content;
+    }
+}

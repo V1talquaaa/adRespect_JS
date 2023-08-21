@@ -1,0 +1,44 @@
+.about {
+  display: flex;
+}
+.aboutLeft {
+  width: 50%;
+  background-image: url('../images/missionBg.jpg');
+  background-size: cover;
+}
+.aboutRight {
+  width: 50%;
+  padding: 135px 92px 135px 160px;
+  background-color: #1b5b31;
+}
+.aboutTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  max-width: 200px;
+  color: #fff;
+}
+.aboutTitle > span {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+}
+.aboutText {
+  font-family: 'Inter', sans-serif;
+  margin-top: 40px;
+  font-size: 16px;
+
+  color: #fff;
+}
+.aboutBtn {
+  padding: 12px 22px;
+  border: 1px solid #fff;
+  border-radius: 200px;
+  margin-top: 72px;
+  background-color: transparent;
+  color: #fff;
+
+  &::after {
+    margin-left: 8px;
+    content: url('../images/whiteArrow.svg');
+    top: 20px;
+  }
+}

@@ -1,2 +1,12 @@
 @import './common';
-@import './example';
+@import './base';
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import './components/header';
+@import './components/hero';
+@import './components/oferta';
+@import './components/about';
+@import './components/realizacje';
+@import './components/contacts';
+@import './components/footer';
+@import './components/modal'
+

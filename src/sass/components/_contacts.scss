@@ -1,0 +1,48 @@
+.contacts {
+  padding-top: 120px;
+  padding-left: 200px;
+  padding-bottom: 120px;
+  padding-right: 200px;
+  background-color: #fff;
+}
+
+.contactsWrap {
+  padding-top: 120px;
+  padding-left: 110px;
+  padding-bottom: 120px;
+  padding-right: 110px;
+  background-color: #1b5b31;
+  display: flex;
+}
+
+.contactsRightWrap {
+  margin-left: 64px;
+}
+
+.contactsTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: #fff;
+}
+
+.contactsTitle > span {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+}
+
+.contactsText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.contactsBtn {
+  border-radius: 200px;
+  padding: 12px 24px;
+  color: #1b5b31;
+}
+
+.contactsBtn > a {
+  text-decoration: none;
+  color: #1b5b31;
+}

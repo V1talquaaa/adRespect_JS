@@ -1,0 +1,53 @@
+.oferta {
+  background-color: #f5f0ec;
+  padding: 160px 0;
+}
+
+.ofertaTextWrap {
+  max-width: 710px;
+  margin-left: 111px;
+}
+
+.servicesList {
+  display: flex;
+}
+.servicesItem {
+  width: 378px;
+  height: 370px;
+  padding: 48px 40px;
+  border-radius: 28px;
+  background-color: #fff;
+}
+
+.servicesItem:not(:last-child) {
+  margin-right: 64px;
+}
+
+.ofertaTitle {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 32px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.ofertaTitle > span {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+}
+.ofertaText {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 63px;
+}
+.servicesLink {
+  position: relative;
+  color: #1b5b31;
+  text-decoration: underline;
+}
+.servicesLink::after {
+  margin-left: 10px;
+  content: url('../images/greenArrow.svg');
+  position: absolute;
+  top: 3px;
+}
