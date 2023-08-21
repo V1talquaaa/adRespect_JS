@@ -1,0 +1,2 @@
+!function(){var e=document.createElement("div");e.id="lightbox",document.body.appendChild(e),document.querySelectorAll(".libraryImg").forEach((function(t){t.addEventListener("click",(function(i){e.classList.add("active");var c=document.createElement("img");for(c.src=t.src;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(c)}))})),e.addEventListener("click",(function(t){t.target===t.currentTarget&&e.classList.remove("active")}))}();
+//# sourceMappingURL=index.d99a5903.js.map
