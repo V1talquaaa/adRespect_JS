@@ -3,13 +3,12 @@ const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 document.body.appendChild(lightbox);
 
-// Delegate event handling to the parent element
 const library = document.querySelector('.grid');
 library.addEventListener('click', e => {
     if (e.target.classList.contains('libraryImg')) {
         const img = document.createElement('img');
         img.src = e.target.src;
-        lightbox.innerHTML = ''; // Clear existing content
+        lightbox.innerHTML = ''; 
         lightbox.appendChild(img);
         lightbox.classList.add('active');
     }
