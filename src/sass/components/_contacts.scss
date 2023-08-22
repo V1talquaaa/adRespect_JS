@@ -1,22 +1,33 @@
 .contacts {
-  padding-top: 120px;
-  padding-left: 200px;
-  padding-bottom: 120px;
-  padding-right: 200px;
-  background-color: #fff;
+  padding: 100px 20px;
+  background-color: #1b5b31;
+  @media screen and (min-width: 1200px) {
+    padding: 120px 200px;
+    background-color: #fff;
+  }
+
 }
 
 .contactsWrap {
-  padding-top: 120px;
-  padding-left: 110px;
-  padding-bottom: 120px;
-  padding-right: 110px;
-  background-color: #1b5b31;
-  display: flex;
+  
+
+  @media screen and (min-width: 1200px) {
+    padding: 120px 110px;
+    display: flex;
+    background-color: #1b5b31;
+  }
+
 }
 
 .contactsRightWrap {
-  margin-left: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 64px;
+    display: block;
+  }
 }
 
 .contactsTitle {

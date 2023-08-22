@@ -1,59 +1,113 @@
 .hero {
-  display: flex;
+  // background-color: #dcc1ab;
+  background-image: linear-gradient(to right,
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), 
+  url('../images/heroRightBg.png');
+  padding: 50px 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    background-color: none;
+    background-image: none;
+    padding: 0;
+  }
+  
 }
 
 .heroLeft {
-  padding: 145px 89px;
-  width: 50%;
-  background-color: #dcc1ab;
+
+ 
+
+  @media screen and (min-width: 1200px) {
+    padding: 145px 89px;
+    width: 50%;
+    background-color: #dcc1ab;
+  }
+
 }
+
 .heroRight {
-  width: 50%;
-  background-image: url('../images/heroRightBg.png');
-  background-size: cover;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 50%;
+    background-image: url('../images/heroRightBg.png');
+    background-size: cover;
+  }
+
 }
 
 .heroTitle {
-  max-width: 600px;
   font-family: 'Montserrat', sans-serif;
-  color: #111111;
-  font-size: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    max-width: 600px;
+    color: #111111;
+    font-size: 60px;
+    text-align: left;
+  }
+
 }
 
 .heroText {
   font-family: 'Inter', sans-serif;
   margin-top: 44px;
-  color: #111111;
+  color: #fff;
   font-size: 16px;
-  max-width: 490px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 490px;
+    color: #111111;
+  }
+  
 }
 
 .heroBtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px 24px;
   border-radius: 200px;
   border: 1px solid #1b5b31;
   background-color: #1b5b31;
   color: #fff;
-  margin-right: 36px;
-
-  &:hover {
-    background-color: rgb(71, 117, 75);
-    
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-right: 36px;
+  
+    &:hover {
+      background-color: rgb(71, 117, 75);
+      
+    }
   }
+
 }
 
 .heroBtn.right {
-  color: #1b5b31;
-  background-color: transparent;
-  text-decoration: none;
-
-  &:hover {
-    background-color: rgb(71, 117, 75);
-    color: #fff;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    color: #1b5b31;
+    background-color: transparent;
+    text-decoration: none;
+  
+    &:hover {
+      background-color: rgb(71, 117, 75);
+      color: #fff;
+    }
   }
+
+  & > a {
+    text-decoration: none;
+    color: #1b5b31;
+  }
+
 }
 
-.heroBtn.right > a {
-  text-decoration: none;
-  color: #1b5b31;
-}

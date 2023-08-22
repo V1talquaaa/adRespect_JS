@@ -1,17 +1,33 @@
 .oferta {
   background-color: #f5f0ec;
-  padding: 160px 0;
+  padding: 50px 8px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 160px 0;
+  }
+
 }
 
 .ofertaTextWrap {
-  max-width: 710px;
-  margin-left: 111px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 710px;
+    margin-left: 111px;
+  }
+
 }
 
 .servicesList {
-  display: flex;
+  padding: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .servicesItem {
+  margin-left: auto;
+  margin-right: auto;
   width: 378px;
   height: 370px;
   padding: 48px 40px;
@@ -20,14 +36,25 @@
 }
 
 .servicesItem:not(:last-child) {
-  margin-right: 64px;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 64px;
+  }
+  
 }
 
 .ofertaTitle {
   font-family: 'Montserrat', sans-serif;
-  margin-top: 32px;
   font-size: 28px;
   font-weight: 700;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-top: 32px;
+  }
 }
 
 .ofertaTitle > span {
@@ -36,7 +63,7 @@
 }
 .ofertaText {
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 12px;
   margin-bottom: 63px;
 }

@@ -1,7 +1,9 @@
 .realizacje {
-  padding-top: 120px;
   background: #DCC1AB;
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+  }
 
 }
 
@@ -11,11 +13,16 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  
   justify-content: center;
   align-content: center;
-  grid-gap: 10px;
   position: relative;
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(3, auto);
+    
+  }
 
   &::after {
     content: "";
@@ -37,14 +44,16 @@
 .libraryBtn {
   position: absolute;
   content: "";
-  left: 600px;
-  bottom: 50px;
   padding: 12px 22px;
   border: 2px solid #000;
   border-radius: 200px;
   background-color: transparent;
   color:#000;
   cursor: pointer;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 
   &::after {
     margin-left: 8px;
@@ -87,8 +96,15 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 48px;
-  margin-left: 160px;
-  margin-bottom: 96px;
+  margin: 20px auto;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 160px;
+    margin-bottom: 96px;
+    text-align: left;
+  }
+
 }
 
 .realizacjeTitle > span {
