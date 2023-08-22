@@ -1,2 +1,0 @@
-const e=document.createElement("div");e.id="lightbox",document.body.appendChild(e);document.querySelectorAll(".libraryImg").forEach((t=>{t.addEventListener("click",(c=>{e.classList.add("active");const d=document.createElement("img");for(d.src=t.src;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(d)}))})),e.addEventListener("click",(t=>{t.target===t.currentTarget&&e.classList.remove("active")}));
-//# sourceMappingURL=index.9638463c.js.map
