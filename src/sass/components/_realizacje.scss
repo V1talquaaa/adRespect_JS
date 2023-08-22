@@ -1,6 +1,8 @@
 .realizacje {
   padding-top: 120px;
-  background-image: linear-gradient(to bottom, #dcc1ab, #c9e6ca52);
+  background: #DCC1AB;
+  
+
 }
 
 .grid {
@@ -9,6 +11,18 @@
   justify-content: center;
   align-content: center;
   grid-gap: 10px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #dcc1ab18, #D6B79E);
+    opacity: 0.5;
+  }
 }
 
 .grid img {
