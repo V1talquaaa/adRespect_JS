@@ -1,2 +1,0 @@
-const e=document.querySelector(".mobMenuIcon"),c=document.querySelector(".mobileMenuClose"),s=document.querySelector(".mobileMenu");e.addEventListener("click",(e=>{e.preventDefault(),s.classList.remove("isHiden"),s.classList.add("isOpen"),console.log("click")})),c.addEventListener("click",(()=>{s.classList.remove("isOpen"),s.classList.add("isHiden"),console.log("click")}));
-//# sourceMappingURL=index.1cfbdf4f.js.map

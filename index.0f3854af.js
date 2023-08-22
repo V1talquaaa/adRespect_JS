@@ -1,0 +1,2 @@
+const e=document.querySelector(".mobMenuIcon"),s=document.querySelector(".mobileMenuClose"),i=document.querySelector(".mobileMenu"),n=document.querySelectorAll(".mobileMenuLink");e.addEventListener("click",(e=>{e.preventDefault(),i.classList.remove("isHiden"),i.classList.add("isOpen")})),s.addEventListener("click",(()=>{i.classList.remove("isOpen"),i.classList.add("isHiden")})),n.forEach((e=>{e.addEventListener("click",(()=>{i.classList.remove("isOpen"),i.classList.add("isHiden")}))}));
+//# sourceMappingURL=index.0f3854af.js.map
