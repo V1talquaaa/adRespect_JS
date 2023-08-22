@@ -1,10 +1,14 @@
 .realizacje {
   padding-top: 120px;
   background: #DCC1AB;
-  
+
 
 }
 
+.gradient {
+  width: 100%;
+  height: 100%;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -22,6 +26,30 @@
     height: 100%;
     background-image: linear-gradient(to bottom, #dcc1ab18, #D6B79E);
     opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.libraryWrap {
+  position: relative;
+}
+
+.libraryBtn {
+  position: absolute;
+  content: "";
+  left: 600px;
+  bottom: 50px;
+  padding: 12px 22px;
+  border: 2px solid #000;
+  border-radius: 200px;
+  background-color: transparent;
+  color:#000;
+  cursor: pointer;
+
+  &::after {
+    margin-left: 8px;
+    content: url('../images/blackArrowDown.svg');
+
   }
 }
 
@@ -52,6 +80,8 @@
   background-color: #000;
   border: 2px solid white;
 }
+
+
 
 .realizacjeTitle {
   font-family: 'Montserrat', sans-serif;
