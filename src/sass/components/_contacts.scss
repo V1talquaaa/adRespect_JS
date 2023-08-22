@@ -34,15 +34,23 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #fff;
+  margin-bottom: 24px;
 }
 
 .contactsBtn {
   border-radius: 200px;
   padding: 12px 24px;
   color: #1b5b31;
+  border:none;
+  background-color: #fff;
+  text-decoration: none;
+
+  &:hover{
+    color: #fff;
+    background-color: rgb(71, 117, 75);
+   
+
+  }
+
 }
 
-.contactsBtn > a {
-  text-decoration: none;
-  color: #1b5b31;
-}

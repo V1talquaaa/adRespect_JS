@@ -35,11 +35,22 @@
   background-color: #1b5b31;
   color: #fff;
   margin-right: 36px;
+
+  &:hover {
+    background-color: rgb(71, 117, 75);
+    
+  }
 }
 
 .heroBtn.right {
   color: #1b5b31;
   background-color: transparent;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgb(71, 117, 75);
+    color: #fff;
+  }
 }
 
 .heroBtn.right > a {

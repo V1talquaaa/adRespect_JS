@@ -24,6 +24,10 @@
   background-color: #1b5b31;
   color: #fff;
   border: none;
+
+  &:hover {
+    background-color: rgb(71, 117, 75);
+  }
 }
 
 .footerMiddle {
@@ -42,7 +46,7 @@
 
 .footerSocialItem > a:hover,
 .phoneEmail > a:hover {
-  color: #1b5b31;
+  color: rgb(71, 117, 75);
 }
 
 .phoneEmail {
