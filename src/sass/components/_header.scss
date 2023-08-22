@@ -1,14 +1,25 @@
 .headerDesktop {
-	display: none;
-
+	padding: 0 15px;
+	position: relative;
 	@media screen and (min-width: 1200px) {
 		display: flex;
 		
 	}
 }
 
+.mobMenuIcon {
+	position: absolute;
+	content: "";
+	right: 15px;
+	top: 15px;
+	border: none;
+	background-color: transparent;
+
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+}
 .header {
-	display: none;
 
 @media screen and (min-width: 1200px) {
 	padding: 24px 0;
@@ -17,6 +28,14 @@
 	align-items: center;
 }
 
+}
+
+.navigation {
+	display: none;
+
+	@media screen and (min-width: 1200px) {
+		display: inline-flex;
+	}
 }
 
 .navigationList {
@@ -92,4 +111,54 @@
 
 .expandright:focus {
 	padding: 0 0 0 16px;
+}
+
+.mobileMenu {
+	padding: 20px;
+	position: fixed;
+	content: "";
+	top: 0;
+	right: 0;
+	width: 90vw;
+	height: 100vh;
+	background-color: #fff;
+
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+}
+
+.mobileMenuList {
+	margin-bottom: 15px;
+}
+
+.mobileMenuLink {
+	text-decoration: none;
+	color:#111;
+	font-size: 24px;
+
+}
+
+.mobileMenuSocialList {
+	display: flex;
+	margin-top: 300px;
+}
+.mobileMenuClose {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 24px;
+	height: 24px;
+	background-color: transparent;
+	border-radius: 50%;
+}
+
+.isHiden {
+	transform: translateX(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.isOpen {
+	transform: translateX(0);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
